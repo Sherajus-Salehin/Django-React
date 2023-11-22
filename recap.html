@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>recap</title>
+</head>
+<body>
+     <h1 id="empty"></h1>
+     <button type="button" onclick="myPosition()">getlocation</button>
+     <script>
+          var h=document.getElementById("empty")
+
+          function myPosition(){
+               if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showLocation);
+               }
+          }
+          function showLocation(position){
+               h.innerHTML="long: "+position.coords.longitude;
+          }
+     </script>
+</body>
+</html>
