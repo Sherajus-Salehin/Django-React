@@ -30,39 +30,48 @@ document.getElementById("0001").innerHTML="element"+1+"from script";
 //     alert("invalid number");
 
                                                                                 //exercise 3
-var n1=prompt('Enter number 1: ');
-var n2=prompt('Enter number 2: ');
-var op=prompt(`select an operation:
-                0:add
-                1:sub
-                2:mult
-                3:div
-                `);
-var result=0;
-if(isNaN(n1) || isNaN(n2))
-    alert("invalid Number");
-else if(op>3 || op<0)
-    alert("invalid operation:");
-else{
-        n1=parseInt(n1);
-        n2=parseInt(n2);
-    switch(parseInt(op)){
-        case 0:
-            result=n1+n2;
-            break;
-        case 1:
-            result=n1-n2;
-            break;
-        case 2:
-            result=n1*n2;
-            break;
-        case 3:
-            result=n1/n2;
-            break;
-        default:
-            break;
-         }
-         alert(`result = ${result}`);
+// var n1=prompt('Enter number 1: ');
+// var n2=prompt('Enter number 2: ');
+// var op=prompt(`select an operation:
+//                 0:add
+//                 1:sub
+//                 2:mult
+//                 3:div
+//                 `);
+// var result=0;
+// if(isNaN(n1) || isNaN(n2))
+//     alert("invalid Number");
+// else if(op>3 || op<0)
+//     alert("invalid operation:");
+// else{
+//         n1=parseInt(n1);
+//         n2=parseInt(n2);
+//     switch(parseInt(op)){
+//         case 0:
+//             result=n1+n2;
+//             break;
+//         case 1:
+//             result=n1-n2;
+//             break;
+//         case 2:
+//             result=n1*n2;
+//             break;
+//         case 3:
+//             result=n1/n2;
+//             break;
+//         default:
+//             break;
+//          }
+//          alert(`result = ${result}`);
+// }
+
+                                                                //erercise 4
+var n=parseInt(prompt("Enter the number of terms: "));
+var sum=1;
+var printS="1";
+for(var i=2;i<=n;i++){
+    var s=i*i;
+    sum+=s;
+    printS=`${printS}+${s}`;
 }
-
-
+console.log(`${printS}=${sum}`);
