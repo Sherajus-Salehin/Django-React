@@ -66,12 +66,28 @@ document.getElementById("0001").innerHTML="element"+1+"from script";
 // }
 
                                                                 //erercise 4
-var n=parseInt(prompt("Enter the number of terms: "));
-var sum=1;
-var printS="1";
-for(var i=2;i<=n;i++){
-    var s=i*i;
-    sum+=s;
-    printS=`${printS}+${s}`;
-}
-console.log(`${printS}=${sum}`);
+// var n=parseInt(prompt("Enter the number of terms: "));
+// var sum=1;
+// var printS="1";
+// for(var i=2;i<=n;i++){
+//     var s=i*i;
+//     sum+=s;
+//     printS=`${printS}+${s}`;
+// }
+// console.log(`${printS}=${sum}`);
+
+
+                                                            //random experiment
+let x1=()=>{
+let a=6;
+};
+console.log(a);
+                                                            //random note- age calculator
+                                                            // calculateAge() {
+                                                            //     let birthday = new Date(this.dob);
+                                                            //     let diff = Date.now() - birthday.getTime();
+                                                            //     let ageDate = new Date(diff);
+                                                            //     return Math.abs(ageDate.getUTCFullYear() - 1970);
+                                                            // }
+                                                        
+                                                        
